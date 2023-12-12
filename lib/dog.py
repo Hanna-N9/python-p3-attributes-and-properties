@@ -23,12 +23,16 @@ class Dog:
         return self._name
     
     def set_name(self, name):
-        if (type(name) is (str)) and (1 <= len(name) <= 25):
+        if (type(name) is (str)) and 1 <= len(name) <= 25:
             self._name = name
         else:
             print("Name must be string between 1 and 25 characters.")
             
     name = property(get_name, set_name)
+    
+    
+    
+    if isinstance(name, str) and 1 <= len(name) <= 25:
             
 # Define a breed property for your Dog class. Your __init__ method should receive a default argument for breed.
 # If the breed is invalid, the setter method should print() "Breed must be in list of approved breeds." The breed must be in the following list of dog breeds:           
