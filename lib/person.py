@@ -19,7 +19,7 @@ APPROVED_JOBS = [
 # If the name is invalid, the setter method should print() "Name must be string between 1 and 25 characters."
 
 class Person:
-      def __init__(self, name="Sally", job="Admin"):
+    def __init__(self, name="Sally", job="Admin"):
         self.name = name
         self.job = job
 
